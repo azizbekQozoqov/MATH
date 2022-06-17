@@ -4,6 +4,7 @@ Made by https://www.azizbekdev.com \n
 v0.0.1
 """
 
+
 if __name__ != "__main__":
     from .library import MATH as rt
 else:
@@ -16,3 +17,9 @@ abs = MATH.abs
 round = MATH.round
 sum = MATH.sum
 is_odd = MATH.is_odd
+is_even = MATH.is_even
+ceil = MATH.ceil
+floor = MATH.floor
+sign = MATH.sign
+min = MATH.min
+max = MATH.max

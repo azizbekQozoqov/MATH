@@ -26,7 +26,7 @@ class MATH:
         return x ** y
     def abs(self, a: Union[int, float]) -> Union[int, float]:
         """
-        - Return the absolute value of the argument.
+        - Returns the absolute value of the argument.
         - This method returns Integer or Float data type.
 
         ### Example code:
@@ -113,8 +113,175 @@ class MATH:
                         raise ValueError("Given value must be number.")
             return all_Sum
         return _do(args)
-    def is_odd(self, a: Union[int, float]):
-        if type(a) != int and type(a) != float:
+    def is_odd(self, a: int ) -> bool:
+        """
+        - Returns given numbers is odd or non odd.
+        - Returns boolean data type.
+
+        ### Example
+
+        ```python
+        import zedmath
+
+        print(zedmath.is_odd(3))
+        print(zedmath.is_odd(2))
+        print(zedmath.is_odd(188))
+        ```
+
+        ### Output
+
+        ```bash
+        True
+        False
+        False
+        ```
+        """
+        if type(a) != int:
             print(type(a))
-            raise ValueError("Data type of given value must be int or float.")
+            raise ValueError("Data type of given value must be int.")
         return (a+1) % 2 == 0
+    def is_even(self, a:int) -> bool:
+        """
+        - Returns given numbers is even or non even.
+        - Returns boolean data type.
+
+        ### Example
+
+        ```python
+        import zedmath
+
+        print(zedmath.is_even(3))
+        print(zedmath.is_even(2))
+        print(zedmath.is_even(188))
+        ```
+
+        ### Output
+
+        ```bash
+        False
+        True
+        True
+        ```
+        """
+        if type(a) != int:
+            print(type(a))
+            raise ValueError("Data type of given value must be int.")
+        return a % 2 == 0
+    def ceil(self, a: Union[int, float]) -> int:
+        """
+        - Rounds a number up to its nearest integer.
+
+        ### Example.
+        ```python
+        import zedmath
+
+        print(zedmath.ceil(3.9))
+        print(zedmath.ceil(3.3))
+        print(zedmath.ceil(3.0))
+        ```
+
+        ### Output.
+        ```bash
+        4
+        4
+        3
+        ```
+        """
+        tmp = a - (a//1)
+        tmp2 = a - tmp
+
+        if tmp == 0 or tmp == 0.0:
+            return int(a)
+
+        return  int(tmp2 + 1)
+    def floor(self, a: Union[int, float]) -> int:
+        """
+        - Returns the value of a rounded down to its nearest integer.
+
+        ### Example.
+        ```python
+        import zedmath
+
+        print(zedmath.floor(3.9))
+        print(zedmath.floor(3.3))
+        print(zedmath.floor(3.0))
+        ```
+
+        ### Output.
+        ```bash
+        3
+        3
+        3
+        ```
+        """
+        tmp = a - (a//1)
+        tmp2 = a - tmp
+
+        if tmp == 0 or tmp == 0.0:
+            return int(a)
+
+        return  int(tmp2)
+    def sign(self, a: Union[int, float]) -> int:
+        """
+        - if given numbers is positive: returns 1
+        - if given numbers is negative: returns -1
+        - if given numbers is 0: returns 0
+
+        ### Example.
+
+        ```python
+        import zedmath
+
+        print(zedmath.sign(-5.1))
+        print(zedmath.sign(5.1))
+        print(zedmath.sign(0))
+        ```
+
+        ### Output.
+
+        ```bash
+        -1
+        1
+        0
+        ```
+        """
+        if a > 0:
+            return 1
+        elif a < 0:
+            return -1
+        return 0
+    def min(self, *args : Union[int, float, str, list[Union[int, float, str]]]) ->Union[int, float]:
+        def _do(a, old):
+            mn = old
+            for i in a:
+                if type(i) != list:
+                    try:
+                        i = float(i)
+                    except:
+                        raise ValueError("Given value must be number.")
+                    if i < mn:
+                        mn = i
+                else:
+                    mn = _do(i, mn)
+            return mn
+
+        return _do(args, args[0])
+    def max(self, *args : Union[int, float, str, list[Union[int, float, str]]]) ->Union[int, float]:
+        def _do(a, old):
+            mn = old
+            for i in a:
+                if type(i) != list:
+                    try:
+                        i = float(i)
+                    except:
+                        raise ValueError("Given value must be number.")
+                    if i > mn:
+                        mn = i
+                else:
+                    mn = _do(i, mn)
+            return mn
+
+        return _do(args, args[0])
+
+
+
