@@ -282,6 +282,11 @@ class MATH:
             return mn
         from math import inf
         return _do(args, -inf)
-
+    def babylonian(self, S: Union[int, float]) -> Union[int, float]:
+        d = 3
+        a = (S - (d**2)) / (d*2)
+        b = a+d
+        x = b - ((a**2) / (b * 2))
+        return x
 
 

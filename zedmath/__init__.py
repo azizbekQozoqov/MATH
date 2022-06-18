@@ -23,3 +23,4 @@ floor = MATH.floor
 sign = MATH.sign
 min = MATH.min
 max = MATH.max
+babylonian = MATH.babylonian
