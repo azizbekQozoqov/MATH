@@ -264,8 +264,8 @@ class MATH:
                 else:
                     mn = _do(i, mn)
             return mn
-
-        return _do(args, args[0])
+        from math import inf
+        return _do(args, inf)
     def max(self, *args : Union[int, float, str, list[Union[int, float, str]]]) ->Union[int, float]:
         def _do(a, old):
             mn = old
@@ -280,8 +280,8 @@ class MATH:
                 else:
                     mn = _do(i, mn)
             return mn
-
-        return _do(args, args[0])
+        from math import inf
+        return _do(args, -inf)
 
 
 

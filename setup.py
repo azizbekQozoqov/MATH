@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='zedmath',
-    version='0.0.3',
+    version='1.0.0',
     description='Math operations',
     author='www.AZIZBEKDEV.com',
     author_email='azizbekqozoqovinfo@gmail.com',
@@ -14,7 +14,6 @@ setup(name='zedmath',
           'Development Status :: 4 - Beta',
           'Intended Audience :: Education',
           'Intended Audience :: Developers',
-          'TOPIC :: SCIENTIFIC/ENGINEERING :: MATHEMATICS',
           'License :: OSI Approved :: MIT License',
           'Operating System :: MacOS :: MacOS X',
           'Operating System :: Microsoft :: Windows',
