@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='zedmath',
-    version='1.0.0',
+    version='1.0.1',
     description='Math operations',
     author='www.AZIZBEKDEV.com',
     author_email='azizbekqozoqovinfo@gmail.com',
