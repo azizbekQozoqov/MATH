@@ -24,3 +24,4 @@ sign = MATH.sign
 min = MATH.min
 max = MATH.max
 babylonian = MATH.babylonian
+digits = MATH.digits

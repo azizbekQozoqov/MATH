@@ -282,11 +282,47 @@ class MATH:
             return mn
         from math import inf
         return _do(args, -inf)
+    
+    
     def babylonian(self, S: Union[int, float]) -> Union[int, float]:
         d = 3
         a = (S - (d**2)) / (d*2)
         b = a+d
         x = b - ((a**2) / (b * 2))
         return x
+    
+    def digits(self, n: Union[int, float]) -> tuple:
+        """
+        - Returns all digits of given number (int or float)
 
+        ### Example.
+
+        ```python
+        import zedmath as zd
+
+        result = zd.digits(134.2)
+
+        print(result)
+        ```
+
+        ### Output
+
+        ```bash
+        (1, 3, 4, 2)
+        ```
+        """
+        if type(n) != int and type(n) != float:
+            raise ValueError("Type of given value must be int or float.")
+        if type(n) == float:
+            n = int(str(n).replace(".", ""))
+        # FOR INT
+        _ = 10
+        all = []
+        
+        def _do(old):
+            for i in str(n):
+                all.append(old // (_ ** (len(str(old)) - 1)))
+                old = old % (_ ** (len(str(old)) - 1))
+        _do(n)
+        return tuple(all)
 

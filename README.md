@@ -34,6 +34,8 @@ MATH.git
 | sign          | Returns given number is positive or negative using 1,-1,0 | __a__ - Required - integer, float |
 | min           | Returns minimum number | __a__ - Required - integer, float, string, list[integer, float, string] |
 | max           | Returns maximum number | __a__ - Required - integer, float, string, list[integer, float, string] |
+| babylonian | <code> none </code> | __S__ - Required - integer, float |
+| digits | Returns all digits of given number | __n__ - Required - integer, float |
 
 - ### EXAMPLES
 
@@ -328,5 +330,28 @@ print(result)
 __output :__
 ```bash
 66.66
+```
+<!--  -->
+
+<code>zedmath.digits(n)</code> - Returns all digits of given number.
+
+<!--  -->
+__code :__
+```python
+# Import zedmath library
+import zedmath as zm
+
+# Create variables called "result" and assign its the result of zd.digits method
+
+numbers = 178
+
+result = zm.digits(numbers)
+
+# Print the result variable
+print(result)
+```
+__output :__
+```bash
+(1, 7, 8)
 ```
 <!--  -->
