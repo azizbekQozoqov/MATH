@@ -1,23 +1,17 @@
-# 🎯 zedmath | Math
-__Simple library for mathematical expressions__
+# 🚀 Zedmath _v2.0.0_
+___Zedmath__ is very simple library for __math__ operations. Zedmath is open source project._
 
-VERSION: __1.0.0__
+## Installition
 
-## INSTALLATION
-
-- __USING PIP__
-
+### __Using pip__
 ```bash
-pip install zedmath
+python3 -m pip install zedmath
 ```
-
-- __CLONE REPO__
-
+### __Clone source code__
 ```bash
 git clone https://github.com/azizbekQozoqov/
 MATH.git
 ```
-
 
 ## USAGE
 
@@ -37,7 +31,9 @@ MATH.git
 | babylonian | <code> none </code> | __S__ - Required - integer, float |
 | digits | Returns all digits of given number | __n__ - Required - integer, float |
 
-- ### EXAMPLES
+
+
+### EXAMPLES
 
 <code>zedmath.pow(x)</code> - Returns the power of a number
 
@@ -355,3 +351,12 @@ __output :__
 (1, 7, 8)
 ```
 <!--  -->
+
+### [Author - Azizbek Qozoqov](https://www.azizbekdev.com)
+## Social networks
+<a href="https://github.com/azizbekQozoqov"><img src="https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://gitlab.com/azizbekQozoqov/"><img src="https://img.shields.io/badge/gitlab-FF6600?style=for-the-badge&logo=gitlab&logoColor=white"/></a></a>
+<a href="https://instagram.com/azizbekdeveloper"><img src="https://img.shields.io/badge/instagram-D1001F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<a href="https://t.me/azizbekdeveloper"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/></a>
+<a href="https://www.codewars.com/users/azizbekQozoqov/"><img src="https://img.shields.io/badge/codewars-DD915F?style=for-the-badge&logo=codewars&logoColor=white"/></a>
+<a href="https://www.sololearn.com/profile/20988344"><img src="https://img.shields.io/badge/sololearn-10397c?style=for-the-badge&logo=sololearn&logoColor=white"/></a>
