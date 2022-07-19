@@ -3,12 +3,18 @@ from typing import Any, Literal, Sequence, Union
 
 class MATH:
     def __init__(self) -> None:
-        self.PI = 3.141592653589793
+        pass
     def pow(self, x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
         """
         - Returns the power of a number
         - This method returns Integer or Float data type.
 
+        \n
+
+        Parameters:
+            x(int, float), \n
+            y(int, float)
+        
         ### Example code:
         ```python
         import zedmath
@@ -29,6 +35,11 @@ class MATH:
         - Returns the absolute value of the argument.
         - This method returns Integer or Float data type.
 
+        \n
+
+        Parameters:
+            a(int, float), 
+
         ### Example code:
         ```python
         import zedmath
@@ -48,6 +59,12 @@ class MATH:
         """
         - Round a number to a given precision in decimal digits.
         - This method returns Integer or Float data type.
+
+        \n
+
+        Parameters:
+            a(int, float), 
+
 
         ### Example code:
         ```python
@@ -87,6 +104,11 @@ class MATH:
         - Returns sum of the given numbers.
         - Data types: str, int, float
 
+        \n
+
+        Parameters:
+            *args(int, float, str, list[int, float, str]), 
+
         ### Example code:
         ```python
         import zedmath
@@ -118,6 +140,11 @@ class MATH:
         - Returns given numbers is odd or non odd.
         - Returns boolean data type.
 
+        \n
+
+        Parameters:
+            *args(int)
+
         ### Example
 
         ```python
@@ -145,6 +172,11 @@ class MATH:
         - Returns given numbers is even or non even.
         - Returns boolean data type.
 
+        \n
+
+        Parameters:
+            *args(int)
+
         ### Example
 
         ```python
@@ -170,6 +202,11 @@ class MATH:
     def ceil(self, a: Union[int, float]) -> int:
         """
         - Rounds a number up to its nearest integer.
+
+        \n
+
+        Parameters:
+            *args(int, float)
 
         ### Example.
         ```python
@@ -197,6 +234,11 @@ class MATH:
     def floor(self, a: Union[int, float]) -> int:
         """
         - Returns the value of a rounded down to its nearest integer.
+
+        \n
+
+        Parameters:
+            *args(int, float)
 
         ### Example.
         ```python
@@ -226,6 +268,11 @@ class MATH:
         - if given numbers is positive: returns 1
         - if given numbers is negative: returns -1
         - if given numbers is 0: returns 0
+
+        \n
+
+        Parameters:
+            *args(int, float)
 
         ### Example.
 
@@ -295,6 +342,11 @@ class MATH:
         """
         - Returns all digits of given number (int or float)
 
+        \n
+
+        Parameters:
+            *args(int, float)
+
         ### Example.
 
         ```python
@@ -325,4 +377,3 @@ class MATH:
                 old = old % (_ ** (len(str(old)) - 1))
         _do(n)
         return tuple(all)
-

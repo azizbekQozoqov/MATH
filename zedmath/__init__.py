@@ -11,7 +11,6 @@ else:
     from library import MATH as rt
 
 MATH = rt()
-PI = MATH.PI
 pow = MATH.pow
 abs = MATH.abs
 round = MATH.round
